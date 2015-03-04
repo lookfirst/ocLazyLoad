@@ -1,6 +1,6 @@
 /**
  * oclazyload - Load modules on demand (lazy load) with angularJS
- * @version v0.6.0
+ * @version v0.7.0
  * @link https://github.com/ocombe/ocLazyLoad
  * @license MIT
  * @author Olivier Combe <olivier.combe@gmail.com>
@@ -990,6 +990,7 @@
   };
 
   // add unit tests support
+  /*
   if((window.jasmine || window.mocha) && angular.isDefined(angular.mock)) {
     var ngMockModuleFct = angular.mock.module;
     var windowMockModuleFct = window.module;
@@ -1005,6 +1006,7 @@
       ngMockModuleFct(module);
     }
   }
+  */
 
   // Array.indexOf polyfill for IE8
   if(!Array.prototype.indexOf) {

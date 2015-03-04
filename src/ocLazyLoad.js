@@ -983,6 +983,7 @@
   };
 
   // add unit tests support
+  /*
   if((window.jasmine || window.mocha) && angular.isDefined(angular.mock)) {
     var ngMockModuleFct = angular.mock.module;
     var windowMockModuleFct = window.module;
@@ -998,6 +999,7 @@
       ngMockModuleFct(module);
     }
   }
+  */
 
   // Array.indexOf polyfill for IE8
   if(!Array.prototype.indexOf) {

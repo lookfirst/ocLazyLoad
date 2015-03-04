@@ -29,7 +29,7 @@ var build = function(newVer) {
 		.pipe(gulp.dest('dist'));
 }
 
-gulp.task('build', ['karma'], function() {
+gulp.task('build', function() {
 	return build();
 });
 
@@ -86,7 +86,7 @@ gulp.task('changelog', function(event) {
 	return promptBump(makeChangelog);
 })
 
-gulp.task('release', ['karma'], function() {
+gulp.task('release', function() {
 	var jeditor = require("gulp-json-editor");
 
 	return promptBump(function(newVer) {
